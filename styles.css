@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+#usernameScreen {
+  text-align: center;
+}
+
+#gameScreen {
+  display: flex;
+}
+
+#chat {
+  width: 200px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#chatInput {
+  padding: 5px;
+}
+
+#cubeContainer {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#cube {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+}
