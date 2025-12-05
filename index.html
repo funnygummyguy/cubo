@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Cube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="usernameScreen">
+    <h2>Create your username</h2>
+    <input type="text" id="usernameInput" placeholder="Enter username" />
+    <button onclick="startGame()">Start</button>
+  </div>
+
+  <div id="gameScreen" style="display: none;">
+    <div id="chat">
+      <div id="messages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message" onkeydown="sendMessage(event)" />
+    </div>
+    <div id="cubeContainer">
+      <div id="cube"></div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
